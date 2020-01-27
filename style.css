@@ -1,0 +1,28 @@
+body {
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background-color: white;
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+    height: 100vh;
+}
+i {
+    font-size: 72px;
+    margin: 30px;
+}
+.playerMove i:hover {
+    color: blue;
+    transition: .3s;
+}
+.score {
+    display: flex;
+    justify-content: space-around;
+}
+
+.computerMove i {
+    visibility: visible;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kamień, papier, nożyce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="playerMove">
+            <h1>Gra kamień, papier, nożyce</h1>
+            <h2>Wybierz Twój ruch</h2>
+            <div class="buttons">
+                <i class="fas fa-hand-rock" id="1" onClick="test(this.id)"></i>
+                <i class="fas fa-hand-paper" id="2" onClick="test(this.id)"></i>
+                <i class="fas fa-hand-scissors" id="3" onClick="test(this.id)"></i>
+            </div>
+        </div>
+        <div class="computerMove">
+            <h2>Ruch komputera to:</h2>
+            <div class="buttons">
+             <i id="computerMove"></i>
+            </div>
+        </div>
+    <h3><span id="theWinnerIs"></span></h3>
+
+        <div id="messages"></div>
+        <div class="score">
+            <div class="player">
+                <h3>Gracz</h3>
+                <p>Punkty: <span id="playerScore">0</span></p>
+            </div>
+            <div class="computer">
+                <h3>Komputer</h3>
+                <p>Punkty: <span id="computerScore">0</span></p>
+            </div>
+        </div>
+        <div class="refresh">
+            <i id="refresh-icon" onClick="location.reload();"></i>
+        </div>
+    </div>
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
